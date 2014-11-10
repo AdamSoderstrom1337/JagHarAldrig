@@ -9,8 +9,10 @@
     tools:context=".Main">
 
     <TextView
-        android:text="Heyooo"
+        android:text="Heaton was here"
+
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="40sp" />
 
 </RelativeLayout>
