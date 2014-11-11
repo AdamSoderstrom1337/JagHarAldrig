@@ -1,44 +1,24 @@
 package com.example.adamsoderstrom.jagharaldrig;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-
-import static android.widget.Button.*;
 
 
-public class Main extends Activity {
+public class runActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Button btnStart = (Button)this.findViewById(R.id.startButton);
-        btnStart.setOnClickListener(new OnClickListener() {
-
-            //Skickar till runActivity onClick
-            public void onClick(View v) {
-                Intent i = new Intent(Main.this, runActivity.class);
-                startActivity(i);
-
-
-                //TODO Lägg till animation
-                // https://www.youtube.com/watch?v=s17CLBXL_84
-            }
-        });
-
+        setContentView(R.layout.activity_run);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.run, menu);
         return true;
     }
 
@@ -53,5 +33,4 @@ public class Main extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }
