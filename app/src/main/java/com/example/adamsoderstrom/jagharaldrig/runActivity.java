@@ -22,20 +22,11 @@ public class runActivity extends Activity {
 
         final Vector<String> statementVec = new Vector<String>();
 
-        /*
         try {
-            statementVec = readDB();
+            readDB(statementVec);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        */
-
-        statementVec.add("1");
-        statementVec.add("2");
-        statementVec.add("3");
-        statementVec.add("4");
-        statementVec.add("5");
-
 
         Collections.shuffle(statementVec);
 
@@ -61,20 +52,16 @@ public class runActivity extends Activity {
         });
     }
 
-    private Vector<String> readDB() throws IOException {
+    public void readDB(Vector<String> temp) throws IOException {
 
-        Vector<String> letters = null;
-
-        BufferedReader reader = new BufferedReader(new FileReader(new File("JagHarAldrig.txt")));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("JagHarAldrig.txt")));
         String line = null;
 
         while ((line = reader.readLine()) != null) {
-            letters.add(line);
+            temp.add(line);
         }
 
         reader.close();
-
-        return letters;
     }
 
 
