@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import static android.widget.Button.*;
 
@@ -18,7 +19,9 @@ public class Main extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnStart = (Button)this.findViewById(R.id.startButton);
+        ImageButton btnStart = (ImageButton) findViewById(R.id.startButton);
+
+
         btnStart.setOnClickListener(new OnClickListener() {
 
             //Skickar till runActivity onClick
