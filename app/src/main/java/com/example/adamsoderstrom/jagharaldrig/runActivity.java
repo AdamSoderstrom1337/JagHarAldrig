@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Collections;
 import java.util.Vector;
 
 
@@ -26,23 +27,24 @@ public class runActivity extends Activity {
         statementVec.add("4");
         statementVec.add("5");
 
+        Collections.shuffle(statementVec);
+
+
         ImageButton btnNext = (ImageButton)this.findViewById(R.id.nextButton);
         btnNext.setOnClickListener(new View.OnClickListener() {
 
             int i=0;
             public void onClick(View v) {
+
                 String output;
 
-                if(i != statementVec.size()) {
-                    output = statementVec.get(i);
+                output = statementVec.get(i);
 
-                    ((TextView) findViewById(R.id.statementText)).setText(output);
-                    i++;
-                }
-                else{
+                ((TextView) findViewById(R.id.statementText)).setText(output);
+                i++;
+                if(i==statementVec.size()){
                     i=0;
-                    ((TextView) findViewById(R.id.statementText)).setText("Kulkul");
-
+                    Collections.shuffle(statementVec);
                 }
 
             }
