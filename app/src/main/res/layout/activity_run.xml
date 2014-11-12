@@ -10,11 +10,32 @@
     tools:context="com.example.adamsoderstrom.jagharaldrig.runActivity">
 
     <TextView
-        android:text="Hello World!"
-        android:textSize="60dp"
+        android:text="Jag har aldrig..."
+        android:textSize="40sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="42sp"
+        android:gravity="center"
+        android:id="@+id/statementText"
         android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextButton"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_below="@+id/statementText"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
