@@ -6,25 +6,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#FFFFFF"
+    android:background="#faf693"
     tools:context="com.example.adamsoderstrom.jagharaldrig.runActivity">
 
     <TextView
-        android:text="Jag har aldrig..."
-        android:textSize="40sp"
-        android:textColor="#000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"
-        android:id="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:textSize="42sp"
+        android:text="You fkin w0t m8?"
+        android:textSize="38sp"
         android:gravity="center"
         android:id="@+id/statementText"
         android:layout_centerVertical="true"
@@ -38,5 +27,16 @@
         android:src="@drawable/ic_launcher"
         android:layout_below="@+id/statementText"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/image1"
+        android:scaleX="100"
+        android:scaleY="100"
+        android:layout_above="@+id/statementText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp" />
 
 </RelativeLayout>
