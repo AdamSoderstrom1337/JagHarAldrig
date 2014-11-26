@@ -20,6 +20,7 @@ public class runActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_run);
 
+
         final Vector<String> statementVec = new Vector<String>();
 
         try {

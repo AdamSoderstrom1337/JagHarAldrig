@@ -29,9 +29,9 @@ public class Main extends Activity {
                 Intent i = new Intent(Main.this, runActivity.class);
                 startActivity(i);
 
+                //overridePendingTransition(R.animator.animation1, R.animator.animation2);
 
-                //TODO Lägg till animation
-                // https://www.youtube.com/watch?v=s17CLBXL_84
+
             }
         });
 
