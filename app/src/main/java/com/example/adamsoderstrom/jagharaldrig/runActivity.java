@@ -2,6 +2,7 @@ package com.example.adamsoderstrom.jagharaldrig;
 
 import android.app.Activity;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.Menu;
@@ -47,14 +48,14 @@ public class runActivity extends Activity {
         //Loop through the statementVec to display all statments, then shuffle
         ImageButton btnNext = (ImageButton)this.findViewById(R.id.nextButton);
 
-
-
-
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.multimedia_button_click_029);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
 
             int i=0;
             public void onClick(View v) {
+
+                mp.start();
 
                 String output;
 
