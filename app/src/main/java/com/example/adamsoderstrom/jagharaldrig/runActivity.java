@@ -1,6 +1,7 @@
 package com.example.adamsoderstrom.jagharaldrig;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +21,10 @@ public class runActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_run);
+
+        Typeface tf = Typeface.createFromAsset(getAssets(), "Arial MT Bold.ttf");
+        TextView statement = (TextView) findViewById(R.id.statementText);
+        statement.setTypeface(tf);
 
         //Holds all statments
         final Vector<String> statementVec = new Vector<String>();
