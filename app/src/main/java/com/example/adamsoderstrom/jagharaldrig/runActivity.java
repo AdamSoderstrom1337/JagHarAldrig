@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -51,6 +52,15 @@ public class runActivity extends Activity {
 
             }
         });
+
+    }
+
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+
+        overridePendingTransition(R.anim.left_in, R.anim.right_out);
     }
 
     public void readDB(Vector<String> temp) throws IOException {

@@ -29,7 +29,7 @@ public class Main extends Activity {
                 Intent i = new Intent(Main.this, runActivity.class);
                 startActivity(i);
 
-                //overridePendingTransition(R.animator.animation1, R.animator.animation2);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
 
 
             }
