@@ -21,9 +21,10 @@ public class runActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_run);
 
-
+        //Holds all statments
         final Vector<String> statementVec = new Vector<String>();
 
+        //Try/Catch read file to statmentVec
         try {
             readDB(statementVec);
         } catch (IOException e) {
@@ -32,7 +33,11 @@ public class runActivity extends Activity {
 
         Collections.shuffle(statementVec);
 
+        //Set statment text to first item in statement vec
+        ((TextView) findViewById(R.id.statementText)).setText("Tryck för att starta");
 
+
+        //Loop through the statementVec to display all statments, then shuffle
         ImageButton btnNext = (ImageButton)this.findViewById(R.id.nextButton);
         btnNext.setOnClickListener(new View.OnClickListener() {
 

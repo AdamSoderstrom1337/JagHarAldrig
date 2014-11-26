@@ -23,18 +23,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nextButton"
-        android:layout_marginTop="77dp"
         android:src="@drawable/ic_launcher"
-        android:layout_below="@+id/statementText"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/image1"
-        android:layout_above="@+id/statementText"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="76dp" />
+        android:layout_marginTop="41dp" />
 
 </RelativeLayout>
