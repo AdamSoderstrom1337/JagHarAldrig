@@ -3,8 +3,10 @@ package com.example.adamsoderstrom.jagharaldrig;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -44,6 +46,11 @@ public class runActivity extends Activity {
 
         //Loop through the statementVec to display all statments, then shuffle
         ImageButton btnNext = (ImageButton)this.findViewById(R.id.nextButton);
+
+
+
+
+
         btnNext.setOnClickListener(new View.OnClickListener() {
 
             int i=0;
@@ -61,8 +68,8 @@ public class runActivity extends Activity {
                 }
 
             }
-        });
 
+        });
     }
 
 
